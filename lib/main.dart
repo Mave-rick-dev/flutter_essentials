@@ -1,15 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_workshop/screens/wrapper.dart';
 
-void main(){
-  runApp(MaterialApp(
-    title: 'Maverick Corp.',
-    home: Scaffold(
-      appBar: AppBar(
-        title: const Text('Maverick Corp.'),
-      ),
-      body: const Center(
-        child: Text('hello world!!'),
-      ),
-    ),
-  ));
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Wrapper(),
+    );
+  }
 }
